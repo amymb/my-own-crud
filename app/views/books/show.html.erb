@@ -1,2 +1,8 @@
-<%=@book.author%>
-<%=@book.title%>
+
+  <%=@book.author%>
+  <%=@book.title%>
+  <%=@book.description%>
+
+  <%=link_to "Back", books_path%>
+  <%=link_to "Edit", edit_book_path%>
+  <%=link_to "Delete", @book, method: :delete%>

@@ -1,0 +1,16 @@
+<%=form_for @book do |book|%>
+
+  <%=book.label :author%>
+  <%=book.text_field :author%>
+
+  <%=book.label :title%>
+  <%=book.text_field :title%>
+
+  <%=book.label :description%>
+  <%=book.text_field :description%>
+
+  <%=book.submit "Update Book"%>
+
+  <%end%>
+  <%=link_to "Delete", @book, method: :delete%>
+  <%=link_to "Cancel", books_path%>
